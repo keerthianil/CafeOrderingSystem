@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Reservation</title>
+        <link href="reservation.css" rel="stylesheet">
+    </head>
+    <div class='container'>
+      <form name='mainform'action="#">
+      <table id='tabel' >
+         
+         <br>
+         <tr>
+            <td colspan='3'>
+               <h1 >RESERVE A TABLE</h1><br>
+            </td>
+         </tr>
+         <!-- First -->
+         <tr>
+            <td>
+               <label for="fname" class='field-label'>
+                  Name
+               <span class="field-required">*</span>
+               </label>
+               <div class='input-container'>
+                  <input type="text" id="fname" class="input-field" name="fname" required>
+               </div>
+            </td>
+            
+            <td colspan='2'>
+               <label for="phno" class='field-label'>
+                  Phone Number
+                  <span class="field-required">*</span>
+               </label>
+               <div class='input-container'>
+                  <input type="text" id="phno" class="input-field" name="phno" required>
+               </div>
+            </td>
+            
+         </tr>
+
+         <!-- 2 -->
+       
+
+         <!-- 3 -->
+         <tr>
+            <td colspan='1'>
+               <label for="email" class='field-label'>
+                  Email Address
+               <span class="field-required">*</span>
+               </label>
+               <div class='input-container'>
+                  <input type="email" id="email" class="input-field" name="email" required >
+               </div>
+            </td>
+            <td>
+               <label for="nop" class='field-label'>
+                  Number of People
+               <span class="field-required">*</span>
+               </label>
+               <div class='input-container'>
+                  <input type="text" class="input-field" id="nop" name="nop" required>
+               </div>
+            </td>       
+         </tr>
+
+         <!-- 4 -->
+         <tr>            
+            <td >
+               <label for="doe" class='field-label'>
+                  Date
+                  <span class="field-required">*</span>
+               </label>
+               <div class='input-container'>
+                  <input type="text" class="input-field" placeholder="Pick a Date" onfocus="(this.type='date')" name="doe" required>                  
+               </div>
+            </td>
+            <td>
+               <label for="time" class='field-label'>
+                  Time
+               <span class="field-required">*</span>
+               </label>
+               <div class='input-container'>
+                  <input type="time" class="input-field" id="time" required>
+               </div>
+            </td>
+         </tr>   
+
+         <!-- 5 -->
+         
+
+         
+          <td colspan='4'><center>
+             <button id='submitButton' type="submit" onclick="ValidateEmail(document.mainform.email)">Submit</button></center>
+          </td>
+         </tr>
+      </table>
+   </form>
+    </div>
+    <script src= "bookings.js"></script>
+
+    </body>
+</html>
